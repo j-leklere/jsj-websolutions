@@ -2,4 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Assets/home-background-bw.jpg");
+}
+
+button {
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
 }
