@@ -41,7 +41,7 @@ header {
 }
 
 .btn-contact:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
   background: linear-gradient(
     45deg,
     rgba(255, 106, 79, 1),

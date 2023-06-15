@@ -19,6 +19,8 @@ h2 {
   font-size: 4rem;
   width: 50%;
   max-width: 80rem;
+  /* animation: slide-from-left 1s ease-out; */
+  animation: slide-from-top 1s ease-out;
 }
 
 h2 span {
@@ -29,6 +31,8 @@ h2 span {
   display: flex;
   flex-direction: column;
   text-align: center;
+  /* animation: slide-from-left 1s ease-out; */
+  animation: slide-from-top 1s ease-out;
 }
 
 .brand-logo-name h1 {
@@ -45,7 +49,7 @@ h2 span {
 }
 
 .hero button {
-  margin-top: 4rem;
+  margin-top: 8rem;
   padding: 1.5rem 3rem;
   border-radius: 50px;
   font-size: 2.4rem;
@@ -56,13 +60,49 @@ h2 span {
     rgba(255, 99, 134, 1),
     rgba(255, 106, 79, 1)
   );
+  animation: slide-from-bottom 1s ease-out;
 }
 
 .hero button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
   background: linear-gradient(
     45deg,
     rgba(255, 106, 79, 1),
     rgba(255, 99, 134, 1)
   );
+}
+
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

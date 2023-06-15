@@ -12,8 +12,14 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./Assets/home-background-bw.jpg");
+  /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Assets/home-background-bw.jpg"); */
+  /* background-color: #222; */
+  background: linear-gradient(
+    176deg,
+    rgb(18, 24, 27) 50%,
+    rgb(32, 39, 55) 100%
+  );
 }
 
 button {
