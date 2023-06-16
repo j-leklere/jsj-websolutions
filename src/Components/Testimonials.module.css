@@ -1,0 +1,60 @@
+.title {
+  text-transform: uppercase;
+  color: #ff6b6b;
+  font-size: 3.6rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin-bottom: 20rem;
+}
+
+.testimonial-item {
+  max-width: 30rem;
+  text-align: center;
+  padding: 2.8rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+.testimonial-item h3,
+h4,
+p,
+svg {
+  color: #fff;
+}
+
+.testimonial-item svg {
+  height: 6rem;
+  margin-bottom: 4rem;
+  color: #2bdcf2;
+}
+
+.testimonial-item p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-item h3 {
+  font-size: 1.8rem;
+  color: #2bdcf2;
+}
+.testimonial-item h4 {
+  font-size: 1.6rem;
+}
+
+.testimonial-item h3,
+.testimonial-item h4 {
+  text-align: right;
+  font-weight: 500;
+}
+
+.testimonial-item:hover {
+  background-color: #2bdbf21a;
+}
