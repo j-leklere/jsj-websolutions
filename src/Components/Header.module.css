@@ -1,7 +1,5 @@
 header {
   height: 7rem;
-  width: 100vw;
-  /* background-color: #444; */
 
   display: flex;
   justify-content: space-between;
