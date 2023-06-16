@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 
 function Hero() {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles["hero-box"]}>
         <h2>
           Desarrollamos sitios web <span>profesionales</span> que generan
@@ -14,7 +14,7 @@ function Hero() {
         </div>
       </div>
       <button>Hacé tu sitio web realidad!</button>
-    </div>
+    </section>
   );
 }
 

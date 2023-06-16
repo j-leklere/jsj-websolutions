@@ -21,14 +21,14 @@ header {
   align-items: center;
   gap: 3rem;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
 .btn-contact {
   padding: 0.8rem 2.1rem;
   border-radius: 50px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border: none;
   color: #fff;
   background: linear-gradient(
