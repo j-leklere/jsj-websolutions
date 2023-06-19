@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .services-items {
@@ -16,30 +17,28 @@
   text-align: center;
   color: #ff6b6b;
   margin-bottom: 15rem;
+  padding-top: 15rem;
 }
 
 .service-item {
   max-width: 30rem;
   text-align: center;
-  transition: all 0.7s ease-out;
+  /* transition: all 0.7s ease-out; */
+  opacity: 0;
+  filter: blur(5px);
 }
 
 .service-item:first-child {
   transform: translateX(-100%);
-  opacity: 0;
+  transition: all 0.3s ease-out;
 }
 .service-item:nth-child(2) {
   transform: translateX(-150%);
-  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 .service-item:last-child {
   transform: translateX(-200%);
-  opacity: 0;
-}
-
-.slide-in {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
+  transition: all 0.7s ease-out;
 }
 
 .service-item h3,

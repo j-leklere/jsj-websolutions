@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 function Contact() {
   return (
-    <>
+    <section id="contact">
       <h2 className={styles["title"]}>Contacto</h2>
       <form action="POST">
         <label htmlFor="fullname">
@@ -17,7 +17,7 @@ function Contact() {
           <textarea type="text" name="message" placeholder="Mensaje" />
         </label>
       </form>
-    </>
+    </section>
   );
 }
 

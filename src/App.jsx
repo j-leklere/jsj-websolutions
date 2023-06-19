@@ -7,6 +7,8 @@ import Testimonials from "./Components/Testimonials";
 function App() {
   return (
     <>
+      {/* <div className="slider-thumb"></div> */}
+
       <Header />
       <Hero />
       <Services />
