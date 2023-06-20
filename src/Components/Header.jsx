@@ -16,7 +16,7 @@ function Header() {
             <a href="#testimonials">Nuestros Clientes</a>
           </li>
           <li>
-            <a href="#services">Sobre Nosotros</a>
+            <a href="#about-us">Sobre Nosotros</a>
           </li>
         </ul>
       </nav>
