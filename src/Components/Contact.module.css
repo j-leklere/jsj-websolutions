@@ -102,7 +102,7 @@ form button:hover {
   margin-bottom: 2rem;
 }
 
-a {
+.whatsapp a {
   font-size: 6.5rem;
 }
 
@@ -110,10 +110,12 @@ a {
   font-size: 5.75rem;
 }
 
-a svg {
+.email a svg,
+.whatsapp a svg {
   transition: all 0.3s;
 }
 
-a svg:hover {
+.email a svg:hover,
+.whatsapp a svg:hover {
   color: #ff6b6b;
 }
