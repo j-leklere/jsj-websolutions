@@ -1,0 +1,38 @@
+.about-us-card-container {
+  width: 56rem;
+  /* height: 23rem; */
+
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.about-us-card-icon-container {
+  background: linear-gradient(0deg, #3bc9db, rgba(255, 106, 79, 1));
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.about-us-card-icon {
+  width: 10rem;
+  height: 7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.about-us-card-p-container {
+  align-self: stretch;
+  background-color: #303030;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-us-card-p {
+  font-size: 1.8rem;
+  text-align: start;
+
+  padding: 3.5rem 2rem 3.5rem 2rem;
+}

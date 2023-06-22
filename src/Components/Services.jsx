@@ -34,13 +34,14 @@ function Services() {
   }, [isIntersecting]);
 
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id="services">
       <h2>SERVICIOS</h2>
       <div className={styles["services-items"]} ref={ref}>
         <div className={styles["service-item"]} ref={refServiceItem}>
           <FontAwesomeIcon icon={faRocket} />
           <h3>
-            <span>CREACIÓN</span> del sitio/aplicación
+            <span>CREACIÓN</span>
+            <br /> del sitio/aplicación
           </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,7 +62,8 @@ function Services() {
         <div className={styles["service-item"]} ref={refServiceItem}>
           <FontAwesomeIcon icon={faTools} />
           <h3>
-            <span>MANTENIMIENTO</span> del producto
+            <span>MANTENIMIENTO</span>
+            <br /> del producto
           </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

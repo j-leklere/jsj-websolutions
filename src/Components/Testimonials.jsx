@@ -4,9 +4,9 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 function Testimonials() {
   return (
-    <>
+    <section id="testimonials" className={styles.testimonials}>
       <h2 className={styles["title"]}>Comentarios de nuestros clientes</h2>
-      <div className={styles.testimonials}>
+      <div className={styles["testimonial-items"]}>
         <div className={styles["testimonial-item"]}>
           <FontAwesomeIcon icon={faQuoteRight} />
           <p>
@@ -44,7 +44,7 @@ function Testimonials() {
           <h4>ADEIP</h4>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

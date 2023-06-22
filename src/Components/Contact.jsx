@@ -5,7 +5,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   return (
-    <>
+    <section id="contact">
       <h2 className={styles["title"]}>Contacto</h2>
       <div className={styles["contact"]}>
         <form action="POST">
@@ -48,7 +48,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

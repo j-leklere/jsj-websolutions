@@ -13,7 +13,9 @@ function Hero() {
           <span>Web Solutions</span>
         </div>
       </div>
-      <button>Hacé tu sitio web realidad!</button>
+      <button className="btn-style-1">
+        <a href="#contact">Hacé tu sitio web realidad!</a>
+      </button>
     </section>
   );
 }

@@ -1,4 +1,10 @@
+.testimonials {
+  height: 100vh;
+}
+
 .title {
+  padding-top: 15rem;
+
   text-transform: uppercase;
   color: #ff6b6b;
   font-size: 3.6rem;
@@ -7,7 +13,7 @@
   margin-bottom: 10rem;
 }
 
-.testimonials {
+.testimonial-items {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

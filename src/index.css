@@ -12,15 +12,59 @@ html {
 }
 
 body {
-  /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./Assets/home-background-bw.jpg"); */
-  /* background-color: #222; */
   background: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("./Assets/home-background-bw.jpg");
+  /* background: linear-gradient(
     176deg,
     rgb(18, 24, 27) 50%,
     rgb(32, 39, 55) 100%
-  );
+  ); */
+  background-size: cover;
   background-attachment: fixed;
+}
+/* body {
+  height: 100vh;
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+} */
+
+/* .slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 30%;
+  top: 20%;
+  width: 450px;
+  height: 450px;
+  width: 1200px;
+  height: 1200px;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+} */
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
 }
 
 button {
@@ -31,7 +75,35 @@ button:hover {
   cursor: pointer;
 }
 
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-style-1 {
+  --a: 45deg;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(var(--a), rgb(255, 99, 134), rgb(255, 106, 79));
+  transition: --a 0.3s ease-out, all 0.3s ease-out;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-style-1:hover {
+  --a: 235deg;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
 .slide-in {
   transform: translateX(0) !important;
   opacity: 1 !important;
+  filter: blur(0) !important;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 45deg;
 }

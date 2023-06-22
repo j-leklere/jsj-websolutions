@@ -2,8 +2,10 @@
   height: calc(100vh - 7rem);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* margin-bottom: 5rem; */
+  /* margin-top: 5rem; */
 }
 
 .hero-box {
@@ -11,10 +13,9 @@
   gap: 10rem;
   justify-content: center;
   align-items: center;
-  padding-top: 20rem;
 }
 
-h2 {
+.hero-box h2 {
   color: #fff;
   font-weight: bold;
   font-size: 4rem;
@@ -24,7 +25,7 @@ h2 {
   animation: slide-from-top 1s ease-out;
 }
 
-h2 span {
+.hero-box h2 span {
   color: #2bdcf2;
 }
 
@@ -32,7 +33,6 @@ h2 span {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* animation: slide-from-left 1s ease-out; */
   animation: slide-from-top 1s ease-out;
 }
 
@@ -52,38 +52,16 @@ h2 span {
 .hero button {
   margin-top: 8rem;
   padding: 1.5rem 3rem;
-  border-radius: 50px;
   font-size: 2rem;
-  border: none;
-  color: #fff;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 99, 134, 1),
-    rgba(255, 106, 79, 1)
-  );
   animation: slide-from-bottom 1s ease-out;
 }
 
 .hero button:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(
-    45deg,
-    rgba(255, 106, 79, 1),
-    rgba(255, 99, 134, 1)
-  );
+  --a: 235deg;
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-@keyframes slide-from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes slide-from-top {
   0% {
     opacity: 0;
