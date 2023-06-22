@@ -1,0 +1,76 @@
+.projects-section {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10rem auto;
+}
+
+.projects-section h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  color: #ff6b6b;
+  margin-bottom: 6rem;
+  padding-top: 5rem;
+}
+
+/*//////////////*/
+/*//Project//*/
+/*//////////////*/
+.first-project {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 8rem;
+  align-items: center;
+}
+
+.first-project-text-container {
+  text-align: start;
+}
+
+.first-project h3 {
+  font-size: 3.4rem;
+  color: #2bdcf2;
+  margin-bottom: 4rem;
+}
+
+.first-project p {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+}
+
+.first-project-link a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #2bdcf2;
+  transition: all 0.5s;
+}
+
+.first-project-link a:hover {
+  color: #1e9aa9;
+}
+
+.first-project-link-icon {
+  color: #2bdcf2;
+  transition: all 0.5s;
+}
+
+.first-project-link a:hover .first-project-link-icon {
+  color: #1e9aa9;
+}
+
+.first-project-imgs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+.first-project-imgs-container img {
+  width: 20rem;
+  transition: all 0.8s;
+}
+
+.first-project-imgs-container img:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}

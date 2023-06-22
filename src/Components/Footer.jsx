@@ -11,7 +11,7 @@ function Footer() {
         <div className={styles["sections-column"]}>
           <a href="#">Inicio</a>
           <a href="#services">Servicios</a>
-          <a href="#">Proyectos </a>
+          <a href="#projects">Proyectos </a>
         </div>
         <div className={styles["sections-column"]}>
           <a href="#testimonials">Comentarios de Clientes</a>

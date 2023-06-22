@@ -10,7 +10,7 @@ function Header() {
             <a href="#services">Servicios</a>
           </li>
           <li>
-            <a href="#services">Proyectos</a>
+            <a href="#projects">Proyectos</a>
           </li>
           <li>
             <a href="#testimonials">Nuestros Clientes</a>
