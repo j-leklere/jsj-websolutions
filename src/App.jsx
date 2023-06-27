@@ -10,7 +10,6 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      {/* <div className="slider-thumb"></div> */}
       <Header />
       <Hero />
       <Services />

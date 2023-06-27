@@ -1,11 +1,13 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Header.module.css";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
     <header>
+      <h1 className={styles["brand-name"]}>JSJ</h1>
       <nav className={styles["header-nav"]}>
         <ul>
-          <h1 className={styles["brand-name"]}>JSJ</h1>
           <li>
             <a href="#services">Servicios</a>
           </li>
@@ -23,6 +25,7 @@ function Header() {
       <button className={`${styles["btn-contact"]} btn-style-1`}>
         <a href="#contact">Contacto</a>
       </button>
+      <FontAwesomeIcon icon={faBars} className={styles["mobile-menu-bars"]} />
     </header>
   );
 }
