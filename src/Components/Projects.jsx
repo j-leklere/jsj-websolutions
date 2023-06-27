@@ -36,9 +36,9 @@ function Projects() {
           <img src={AdeipImg} alt="img" />
           <img src={AdeipImg} alt="img" />
           <img src={AdeipImg} alt="img" />
+          {/* <img src={AdeipImg} alt="img" />
           <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
+          <img src={AdeipImg} alt="img" /> */}
         </div>
       </div>
     </section>
