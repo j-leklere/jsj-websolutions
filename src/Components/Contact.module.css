@@ -1,3 +1,7 @@
+.section-contact {
+  height: 100vh;
+}
+
 .title {
   text-transform: uppercase;
   color: #ff6b6b;
@@ -12,8 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  margin: 10rem auto;
-
+  margin: 20rem auto;
   max-width: 100rem;
 }
 
@@ -30,21 +33,23 @@ label {
   display: flex;
   flex-direction: column;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
 input {
   height: 2.8rem;
-  padding: 1rem 7px;
+  padding: 2rem;
   margin-top: 5px;
   border: none;
   color: #333;
   background-color: #1a1a1a;
+  font-size: 1.8rem;
 }
 
 textarea {
-  padding: 1rem 7px;
+  padding: 0.8rem 2rem;
+  font-size: 1.8rem;
   margin-top: 5px;
   border: none;
   background-color: #1a1a1a;
@@ -58,8 +63,9 @@ form button {
   background-color: #ff6b6b;
   border: none;
   transition: all 0.3s;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
+  border-radius: 5px;
 }
 
 form button:hover {
@@ -83,7 +89,7 @@ form button:hover {
 }
 
 .other-contact p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -105,11 +111,11 @@ form button:hover {
 }
 
 .whatsapp a {
-  font-size: 6.5rem;
+  font-size: 8.5rem;
 }
 
 .email a {
-  font-size: 5.75rem;
+  font-size: 7.75rem;
 }
 
 .email a svg,
@@ -120,4 +126,65 @@ form button:hover {
 .email a svg:hover,
 .whatsapp a svg:hover {
   color: #ff6b6b;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .section-contact {
+    height: auto;
+  }
+  /* .title {
+  } */
+  .contact {
+    flex-direction: column;
+    margin: auto;
+  }
+  form {
+    border: none;
+    padding-right: 0;
+    width: 100%;
+    align-items: center;
+  }
+  label {
+    width: 75%;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin: auto;
+  }
+  form button {
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .other-contact {
+    border-top: 1px solid #fff;
+    margin-top: 10rem;
+    padding-left: 0;
+  }
+
+  .other-contact h3 {
+    text-align: center;
+  }
+
+  .whatsapp {
+    margin: 7.5rem 0;
+  }
+
+  .whatsapp,
+  .email {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 5rem;
+  }
+
+  .whatsapp div,
+  .email div {
+    align-items: center;
+  }
 }

@@ -1,7 +1,3 @@
-.testimonials {
-  height: 100vh;
-}
-
 .title {
   padding-top: 15rem;
 
@@ -64,4 +60,10 @@ svg {
 
 .testimonial-item:hover {
   background-color: #2bdbf21a;
+}
+
+@media (max-width: 480px) {
+  .testimonial-item {
+    background-color: #2bdbf21a;
+  }
 }
