@@ -8,6 +8,7 @@ function Projects() {
   return (
     <section className={styles["projects-section"]} id="projects">
       <h2>PROYECTOS</h2>
+
       <div className={styles["first-project"]}>
         <div className={styles["first-project-text-container"]}>
           <h3>ADEIP</h3>
@@ -19,12 +20,12 @@ function Projects() {
             libero risus.Vestibulum posuere turpis turpis, non ullamcorper ex
             lacinia ac.
           </p>
-          <div className={styles["first-project-link"]}>
+          <div className={styles["project-link"]}>
             <a href="https://adeip.org.ar/" target="_blank" rel="noreferrer">
               Accede a la página de Adeip{" "}
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
-                className={styles["first-project-link-icon"]}
+                className={styles["project-link-icon"]}
               />
             </a>
           </div>
@@ -36,9 +37,37 @@ function Projects() {
           <img src={AdeipImg} alt="img" />
           <img src={AdeipImg} alt="img" />
           <img src={AdeipImg} alt="img" />
-          {/* <img src={AdeipImg} alt="img" />
+        </div>
+      </div>
+
+      <div className={styles["second-project"]}>
+        <div className={styles["second-project-text-container"]}>
+          <h3>ADEIP</h3>
+          <p>
+            Vestibulum posuere turpis turpis, non ullamcorper ex lacinia ac.
+            Quisque et consequat turpis, nec dignissim metus. Nullam quis libero
+            risus.Vestibulum posuere turpis turpis, non ullamcorper ex lacinia
+            ac. Quisque et consequat turpis, nec dignissim metus. Nullam quis
+            libero risus.Vestibulum posuere turpis turpis, non ullamcorper ex
+            lacinia ac.
+          </p>
+          <div className={styles["project-link"]}>
+            <a href="https://adeip.org.ar/" target="_blank" rel="noreferrer">
+              Accede a la página de Adeip{" "}
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className={styles["project-link-icon"]}
+              />
+            </a>
+          </div>
+        </div>
+        <div className={styles["second-project-imgs-container"]}>
           <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" /> */}
+          <img src={AdeipImg} alt="img" />
+          <img src={AdeipImg} alt="img" />
+          <img src={AdeipImg} alt="img" />
+          <img src={AdeipImg} alt="img" />
+          <img src={AdeipImg} alt="img" />
         </div>
       </div>
     </section>
