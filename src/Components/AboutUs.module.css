@@ -1,5 +1,4 @@
 .about-us-section {
-  width: 70%;
   text-align: center;
   margin: 0 auto 10rem auto;
 }
@@ -14,12 +13,15 @@
 
 .about-us-p {
   font-size: 2rem;
+  width: 80%;
 
   margin-bottom: 7rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards-container {
-  width: 90%;
+  width: 120rem;
 
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -32,7 +34,7 @@
 }
 
 .last-card-container {
-  width: 90%;
+  width: 44%;
   margin-left: auto;
   margin-right: auto;
 
@@ -122,3 +124,30 @@
 /*////////////////////*/
 /*/////MediaQueries//////*/
 /*////////////////////*/
+@media (max-width: 1280px) {
+  .cards-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .last-card-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-p {
+    width: 90%;
+  }
+}

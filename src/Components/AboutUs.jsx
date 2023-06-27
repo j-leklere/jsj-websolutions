@@ -15,7 +15,7 @@ function AboutUs() {
         diseño web está comprometido en ofrecer soluciones personalizadas y de
         calidad que satisfagan las necesidades de cada proyecto.
       </p>
-      {/* <div className={styles["cards-container"]}>
+      <div className={styles["cards-container"]}>
         <AboutUsCard
           icon={faGears}
           text="Tomamos en cuenta las necesidades y deseos del cliente para un
@@ -43,7 +43,7 @@ function AboutUs() {
           text="Tomamos en cuenta las necesidades y deseos del cliente para un
         desarrollo personalizado y preciso del producto"
         />
-      </div> */}
+      </div>
 
       {/* <div className={styles["flip-card"]}>
         <div className={styles["flip-card-inner"]}>

@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 1.2fr;
   column-gap: 8rem;
   align-items: center;
-  /* height: 70vh; */
+  height: 70vh;
 
   margin-bottom: 10rem;
 }
@@ -68,7 +68,7 @@
   grid-template-columns: 1.2fr 1fr;
   column-gap: 8rem;
   align-items: center;
-  /* height: 60vh; */
+  height: 60vh;
 }
 
 /*//text//*/
@@ -155,9 +155,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .first-project {
+    height: auto;
+  }
+
   .second-project-imgs-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second-project {
+    height: auto;
   }
 }
 
