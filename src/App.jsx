@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Testimonials from "./Components/Testimonials";
 import AboutUs from "./Components/AboutUs";
 import Footer from "./Components/Footer";
+import ScrollUpBtn from "./Components/ScrollUpBtn";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Testimonials />
       <AboutUs />
       <Contact />
+      <ScrollUpBtn />
       <Footer />
     </>
   );

@@ -1,0 +1,19 @@
+.scroll-up-btn-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.scroll-up-btn {
+  font-size: 3rem;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+
+  padding: 1.5rem;
+}
+
+.scroll-up-btn:hover {
+  transform: translateY(-3px);
+}

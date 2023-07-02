@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
-    <header>
+    <header id="header">
       <h1 className={styles["brand-name"]}>JSJ</h1>
       <nav className={styles["header-nav"]}>
         <ul>
