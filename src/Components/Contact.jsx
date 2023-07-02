@@ -25,7 +25,7 @@ function Contact() {
             Mensaje
             <textarea type="text" name="message" placeholder="Mensaje" />
           </label>
-          <button>Enviar</button>
+          <button className="btn-style-1">Enviar</button>
         </form>
         <div className={styles["other-contact"]}>
           <div className={styles["whatsapp"]}>

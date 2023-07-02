@@ -32,7 +32,7 @@ function ScrollUpBtn() {
   return (
     <>
       {btnUp && (
-        <a href="#" className={styles["scroll-up-btn-container"]}>
+        <a href="/" className={styles["scroll-up-btn-container"]}>
           <FontAwesomeIcon
             icon={faChevronUp}
             className={styles["scroll-up-btn"]}
