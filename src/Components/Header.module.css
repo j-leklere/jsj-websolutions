@@ -65,6 +65,14 @@ header {
     padding: var(--page-padding-small);
     padding-top: 2rem;
   }
+
+  .brand-name {
+    margin-right: 0;
+  }
+
+  .header-nav ul {
+    gap: 1.6rem;
+  }
 }
 
 @media (max-width: 768px) {

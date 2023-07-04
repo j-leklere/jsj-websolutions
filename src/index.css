@@ -71,7 +71,7 @@ button a {
   border: none;
   border-radius: 50px;
   color: #fff;
-  background: linear-gradient(var(--a), rgb(255, 99, 134), rgb(255, 106, 79));
+  background: linear-gradient(var(--a), rgb(255, 63, 105), rgb(255, 133, 111));
   transition: --a 0.3s ease-out, all 0.3s ease-out;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }

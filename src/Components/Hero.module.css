@@ -11,7 +11,7 @@
 
 .hero-box {
   display: flex;
-  gap: 10rem;
+  gap: 12rem;
   justify-content: center;
   align-items: center;
 }
@@ -59,7 +59,12 @@
   margin-top: 8rem;
   padding: 1.5rem 3rem;
   font-size: 2rem;
-  animation: slide-from-bottom 1s ease-out;
+  /* animation: slide-from-bottom 1s ease-out; */
+  --a: 235deg;
+  background-size: 200% 200%;
+  animation: rotate-bg-color 2s ease-in-out infinite;
+  /* animation-iteration-count: 5;
+  animation-direction: alternate; */
 }
 
 .hero button:hover {
@@ -92,20 +97,56 @@
   }
 }
 
+@keyframes rotate-bg-color {
+  /* 0% {
+    background: linear-gradient(var(--a), rgb(255, 99, 134), rgb(255, 106, 79));
+  }
+
+  50% {
+    background: linear-gradient(
+      calc(var(--a) + 90deg),
+      rgb(255, 99, 134),
+      rgb(255, 106, 79)
+    );
+  }
+
+  100% {
+    background: linear-gradient(
+      calc(var(--a) + 180deg),
+      rgb(255, 99, 134),
+      rgb(255, 106, 79)
+    );
+  } */
+
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
 @media (max-width: 1280px) {
   .hero-box {
-    gap: 5rem;
+    gap: 8rem;
     justify-content: space-between;
   }
 
   .brand-logo-name span {
-    font-size: 5rem;
+    font-size: 4.6rem;
   }
 }
 
 @media (max-width: 1024px) {
   .hero {
     padding: var(--page-padding-small);
+  }
+
+  .hero-box {
+    gap: 4rem;
   }
 
   .brand-logo-name span {
