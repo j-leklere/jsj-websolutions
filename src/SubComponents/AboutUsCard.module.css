@@ -41,9 +41,22 @@
 /*////////////////////*/
 /*/////MediaQueries//////*/
 /*////////////////////*/
+@media (max-width: 1800px) {
+  .about-us-card-p {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 1280px) {
   .about-us-card-container {
     width: 95%;
+  }
+
+  .about-us-card-icon {
+    width: 8rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
