@@ -9,7 +9,7 @@ function Footer() {
           <h2>Web Solutions</h2>
         </div>
         <div className={styles["sections-column"]}>
-          <a href="#">Inicio</a>
+          <a href="/">Inicio</a>
           <a href="#services">Servicios</a>
           <a href="#projects">Proyectos </a>
         </div>

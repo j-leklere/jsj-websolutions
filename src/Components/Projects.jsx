@@ -31,12 +31,24 @@ function Projects() {
           </div>
         </div>
         <div className={styles["first-project-imgs-container"]}>
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
         </div>
       </div>
 
@@ -62,12 +74,24 @@ function Projects() {
           </div>
         </div>
         <div className={styles["second-project-imgs-container"]}>
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
-          <img src={AdeipImg} alt="img" />
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
+          <figure>
+            <img src={AdeipImg} alt="img" />
+          </figure>
         </div>
       </div>
     </section>
