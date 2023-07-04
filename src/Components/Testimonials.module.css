@@ -18,10 +18,14 @@
 }
 
 .swiper {
-  padding: 2rem 4rem 2rem 6.4rem !important;
+  padding: 2rem 4rem !important;
 }
 
 @media (max-width: 800px) {
+  .swiper {
+    padding: 2rem 4rem;
+    max-width: 50rem;
+  }
   .testimonial-items {
     padding: 1rem;
   }
