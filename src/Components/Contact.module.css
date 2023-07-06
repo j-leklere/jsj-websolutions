@@ -35,7 +35,7 @@ label {
   flex-direction: column;
   color: #fff;
   font-size: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 input {
@@ -48,6 +48,10 @@ input {
   font-size: 1.8rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 textarea {
   padding: 0.8rem 2rem;
   font-size: 1.8rem;
@@ -55,6 +59,10 @@ textarea {
   border: none;
   color: #fff;
   background-color: #1a1a1a;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 form button {
@@ -120,6 +128,54 @@ form button {
   color: #ff6b6b;
 }
 
+/*//////////////////*/
+/*/ //Validations//*/
+/*//////////////////*/
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  25% {
+    margin-left: 0.3rem;
+    margin-right: -0.3rem;
+  }
+  75% {
+    margin-left: -0.3rem;
+    margin-right: 0.3rem;
+  }
+  100% {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+.invalid-input {
+  animation: shake 0.2s ease-in-out 2;
+  box-shadow: 0 0 0.4rem #ff6f6f;
+  border: 1px solid #ff6f6f !important;
+}
+
+.invalid-label {
+  animation: shake 0.2s ease-in-out 2;
+  color: #ff6f6f;
+}
+
+.p-invalid {
+  font-size: 14px;
+  color: #ff6f6f;
+  margin-top: 0.5rem;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  cursor: not-allowed;
+}
+
+/*//////////////////*/
+/*/ //MediaQueries///*/
+/*//////////////////*/
 @media (max-width: 480px) {
   html {
     font-size: 50%;
