@@ -10,11 +10,11 @@ function Footer() {
         </div>
         <div className={styles["sections-column"]}>
           <a href="/">Inicio</a>
-          <a href="#services">Servicios</a>
+          <a href="#testimonials">Testimonios</a>
           <a href="#projects">Proyectos </a>
         </div>
         <div className={styles["sections-column"]}>
-          <a href="#testimonials">Comentarios de Clientes</a>
+          <a href="#services">Servicios</a>
           <a href="#about-us">Sobre Nosotros</a>
           <a href="#contact">Contacto</a>
         </div>
