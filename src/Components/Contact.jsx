@@ -2,131 +2,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Contact.module.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { useRef } from "react";
-import useInputValidation from "../Hooks/useInputValidation";
 
 function Contact() {
-  const formRef = useRef();
-
-  const regularExpressions = {
-    fullname: /^[a-zA-ZÁ-ÿ\s]{2,100}$/,
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  };
-
-  // Validacion inputs
-  const {
-    value: fullnameValue,
-    isValid: fullnameIsValid,
-    hasError: fullnameHasError,
-    valueChangeHandler: fullnameChangeHandler,
-    inputBlurHandler: fullnameBlurHandler,
-    reset: resetFullname,
-  } = useInputValidation((value) => regularExpressions.fullname.test(value));
-
-  const {
-    value: emailValue,
-    isValid: emailIsValid,
-    hasError: emailHasError,
-    valueChangeHandler: emailChangeHandler,
-    inputBlurHandler: emailBlurHandler,
-    reset: resetEmail,
-  } = useInputValidation((value) => regularExpressions.email.test(value));
-
-  const {
-    value: messageValue,
-    isValid: messageIsValid,
-    hasError: messageHasError,
-    valueChangeHandler: messageChangeHandler,
-    inputBlurHandler: messageBlurHandler,
-    reset: resetMessage,
-  } = useInputValidation((value) => value !== "");
-
-  // Validacion form
-  let formIsValid = false;
-
-  if (fullnameIsValid && emailIsValid && messageIsValid) {
-    formIsValid = true;
-  }
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    if (!formIsValid) {
-      return;
-    }
-
-    //From this point the form is validated and ready to be sent or else.
-    resetFullname();
-    resetEmail();
-    resetMessage();
-  };
-
-  // Conditional classes for inputs and labels
-  const fullnameClassInput = fullnameHasError
-    ? `${styles["invalid-input"]}`
-    : "";
-  const emailClassInput = emailHasError ? `${styles["invalid-input"]}` : "";
-  const messageClassInput = messageHasError ? `${styles["invalid-input"]}` : "";
-  const fullnameClassLabel = fullnameHasError
-    ? `${styles["invalid-label"]}`
-    : "";
-  const emailClassLabel = emailHasError ? `${styles["invalid-label"]}` : "";
-  const messageClassLabel = messageHasError ? `${styles["invalid-label"]}` : "";
-
   return (
     <section className={styles["section-contact"]} id="contact">
       <h2 className={styles["title"]}>Contacto</h2>
       <div className={styles["contact"]}>
-        <form action="POST" ref={formRef} onSubmit={submitHandler}>
-          <label htmlFor="fullname" className={fullnameClassLabel}>
+        <form action="POST">
+          <label htmlFor="fullname">
             Nombre Completo
             <input
               type="text"
               name="fullname"
               placeholder="Nombre y Apellido"
-              value={fullnameValue}
-              onChange={fullnameChangeHandler}
-              onBlur={fullnameBlurHandler}
-              className={fullnameClassInput}
             />
-            {fullnameHasError && (
-              <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
-            )}
           </label>
-          <label htmlFor="email" className={emailClassLabel}>
+          <label htmlFor="email">
             Email
-            <input
-              type="text"
-              name="email"
-              placeholder="ejemplo@gmail.com"
-              value={emailValue}
-              onChange={emailChangeHandler}
-              onBlur={emailBlurHandler}
-              className={emailClassInput}
-            />
-            {emailHasError && (
-              <p className={styles["p-invalid"]}>
-                Este campo debe ser un e-mail válido.
-              </p>
-            )}
+            <input type="text" name="email" placeholder="ejemplo@gmail.com" />
           </label>
-          <label htmlFor="message" className={messageClassLabel}>
+          <label htmlFor="message">
             Mensaje
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Mensaje"
-              value={messageValue}
-              onChange={messageChangeHandler}
-              onBlur={messageBlurHandler}
-              className={messageClassInput}
-            />
-            {messageHasError && (
-              <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
-            )}
+            <textarea type="text" name="message" placeholder="Mensaje" />
           </label>
-          <button className="btn-style-1" disabled={!formIsValid}>
-            Enviar
-          </button>
+          <button className="btn-style-1">Enviar</button>
         </form>
         <div className={styles["other-contact"]}>
           <div className={styles["whatsapp"]}>
