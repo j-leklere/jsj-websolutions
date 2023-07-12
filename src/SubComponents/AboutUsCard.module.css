@@ -60,6 +60,15 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .about-us-card-icon {
+    width: 8rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .about-us-card-icon {
     width: 8rem;

@@ -16,7 +16,6 @@ function ScrollUpBtn() {
 
     const obsCallback = ([entry]) => {
       if (!entry.isIntersecting) {
-        console.log("intersecto");
         setBtnUp(true);
       } else {
         setBtnUp(false);

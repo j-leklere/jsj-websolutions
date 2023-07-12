@@ -17,9 +17,10 @@
 /*//////////////*/
 .first-project {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
   align-items: center;
+  justify-items: center;
   height: 70vh;
 
   margin-bottom: 10rem;
@@ -70,9 +71,10 @@
 /*//////////////*/
 .second-project {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
   align-items: center;
+  justify-items: center;
   height: 60vh;
 }
 
@@ -145,47 +147,37 @@
 /*////////////////////*/
 /*/////MediaQueries//////*/
 /*////////////////////*/
+@media (max-width: 1700px) {
+  .first-project-imgs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .first-project-imgs-container figure {
+    width: 23rem;
+  }
+
+  .second-project-imgs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .second-project-imgs-container figure {
+    width: 23rem;
+  }
+}
+
 @media (max-width: 1550px) {
   .projects-section {
     width: 80%;
   }
 }
 
-@media (max-width: 1440px) {
-  .projects-section {
-    width: 80%;
-  }
-
-  .first-project {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .first-project-imgs-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .first-project-imgs-container figure {
-    width: 90%;
-  }
-
-  .second-project {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .second-project-imgs-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .second-project-imgs-container figure {
-    width: 90%;
-  }
-}
-
 @media (max-width: 1280px) {
   .first-project {
-    height: auto;
+    height: 80vh;
   }
 
   .first-project-imgs-container {
@@ -195,10 +187,6 @@
 
   .first-project-imgs-container figure {
     width: 20rem;
-  }
-
-  .second-project {
-    height: auto;
   }
 
   .second-project-imgs-container {
@@ -228,6 +216,7 @@
   }
 
   .second-project {
+    height: 80vh;
     grid-template-columns: 1fr;
   }
 
@@ -250,6 +239,15 @@
 
   .project-link {
     margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .first-project {
+    height: auto;
+  }
+  .second-project {
+    height: auto;
   }
 }
 

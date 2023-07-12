@@ -23,3 +23,12 @@
 .scroll-up-btn:hover {
   transform: translateY(-3px);
 }
+
+/*////////////////////*/
+/*/////MediaQueries//////*/
+/*////////////////////*/
+@media (max-width: 480px) {
+  .scroll-up-btn-container .scroll-up-btn {
+    font-size: 4rem;
+  }
+}
