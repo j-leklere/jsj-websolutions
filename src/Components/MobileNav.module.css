@@ -1,0 +1,87 @@
+.background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.75rem;
+  right: 1.75rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(255, 63, 105),
+    rgb(255, 133, 111)
+  );
+  z-index: 100;
+  animation: expand-bg 0.4s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+
+@keyframes expand-bg {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scaleX(30) scaleY(50);
+  }
+}
+
+.container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+  opacity: 0;
+  animation: fade-in 0.3s ease-in forwards;
+  animation-delay: 0.05s;
+  padding: 1rem 5%;
+}
+
+.layout-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title {
+  color: #444;
+  color: #fff;
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.menu-close {
+  height: 4.5rem;
+  width: 4.5rem;
+  color: #444;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.mobile-nav {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 2.4rem;
+  gap: 1rem;
+
+  transition: all 0.3s;
+  max-height: fit-content;
+}
+
+.mobile-nav li a {
+  text-decoration: none;
+  color: #444;
+  color: #fff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

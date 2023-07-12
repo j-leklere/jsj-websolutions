@@ -41,11 +41,14 @@ function Services() {
           <FontAwesomeIcon icon={faRocket} />
           <h3>
             <span>CREACIÓN</span>
-            <br /> del sitio/aplicación
+            <br /> del sitio web
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            elusmod tempor incididunt ut labore et dolore magna aliqua.
+            {/* Desarrollamos sitios web personalizados que se adaptan a las
+            necesidades y objetivos específicos del cliente. */}
+            Desarrollamos sitios web personalizados, con una interfaz moderna y
+            un back-end eficiente, ambos ajustados a las necesidades y objetivos
+            del cliente.
           </p>
         </div>
         <div className={styles["service-item"]} ref={refServiceItem}>
@@ -55,8 +58,12 @@ function Services() {
             <br /> de problemas
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            elusmod tempor incididunt ut labore et dolore magna aliqua.
+            {/* Aplicaremos nuestros conocimientos para identificar las causas de
+            los obstáculos que surjan, y encontraremos soluciones eficientes a
+            los mismos. */}
+            Aplicaremos nuestros conocimientos para identificar las causas de
+            los obstáculos que surjan, e implementaremos soluciones eficientes
+            para estos.
           </p>
         </div>
         <div className={styles["service-item"]} ref={refServiceItem}>
@@ -66,8 +73,12 @@ function Services() {
             <br /> del producto
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            elusmod tempor incididunt ut labore et dolore magna aliqua.
+            {/* Nuestro servicio de mantenimiento incluye actualizaciones regulares,
+            junto con la garantía de que el producto siga funcionando de manera
+            óptima. */}
+            Nuestro servicio de mantenimiento garantiza que el producto siga
+            funcionando de manera óptima e incluye actualizaciones regulares del
+            mismo.
           </p>
         </div>
       </div>

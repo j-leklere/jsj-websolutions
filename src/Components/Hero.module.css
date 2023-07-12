@@ -55,22 +55,46 @@
   color: #fff;
 }
 
-.hero button {
+.btn-hero {
   margin-top: 8rem;
   padding: 1.5rem 3rem;
   font-size: 2rem;
   /* animation: slide-from-bottom 1s ease-out; */
   --a: 235deg;
   background-size: 200% 200%;
-  animation: rotate-bg-color 2s ease-in-out infinite;
   /* animation-iteration-count: 5;
   animation-direction: alternate; */
+  position: relative;
+  transition: all 0.3s;
 }
 
-.hero button:hover {
+.btn-hero::after {
+  content: "";
+  background-color: #ff6b6b;
+  color: #444;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-hero:hover {
+  background: linear-gradient(var(--a), rgb(255, 63, 105), rgb(255, 196, 69));
+  transition: --a 0.3s ease-out, all 0.3s ease-out;
+  animation: rotate-bg-color 2s ease-in-out infinite;
   --a: 235deg;
   transform: translateY(-4px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-hero:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 @keyframes slide-from-top {

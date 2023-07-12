@@ -43,8 +43,8 @@
 }
 
 .service-item h3,
-p,
-svg {
+.service-item p,
+.service-item svg {
   color: #fff;
 }
 
