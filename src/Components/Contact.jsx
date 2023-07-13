@@ -1,12 +1,20 @@
+import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Contact.module.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { useRef } from "react";
 import useInputValidation from "../Hooks/useInputValidation";
+import emailjs from "@emailjs/browser";
+import { Transition } from "react-transition-group";
+import ToastForm from "../Components/ToastForm";
 
 function Contact() {
   const formRef = useRef();
+  const nodeRef = useRef(null);
+  const [showToast, setShowToast] = useState(false);
+  const [toastColor, setToastColor] = useState("");
+  const [toastContent, setToastContent] = useState("");
+  const closeToast = () => setShowToast(false);
 
   const regularExpressions = {
     fullname: /^[a-zA-ZÁ-ÿ\s]{2,100}$/,
@@ -50,6 +58,7 @@ function Contact() {
 
   const submitHandler = (e) => {
     e.preventDefault();
+
     if (!formIsValid) {
       return;
     }
@@ -58,6 +67,33 @@ function Contact() {
     resetFullname();
     resetEmail();
     resetMessage();
+
+    // Sending mail
+    emailjs
+      .sendForm(
+        "service_sm1xkvp",
+        "template_llxflwx",
+        formRef.current,
+        "p41ZztYgmIiWIeHiS"
+      )
+      .then((result) => {
+        console.log(result, result.text);
+        setToastContent("Formulario enviado!");
+        setToastColor("var(--confirmation-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+        // Resetting all values to ""
+        resetFullname();
+        resetEmail();
+        resetMessage();
+      })
+      .catch((err) => {
+        console.log(err.text);
+        setToastContent("Algo salió mal.");
+        setToastColor("var(--accent-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      });
   };
 
   // Conditional classes for inputs and labels
@@ -74,6 +110,16 @@ function Contact() {
 
   return (
     <section className={styles["section-contact"]} id="contact">
+      <Transition in={showToast} timeout={200} nodeRef={nodeRef}>
+        {(state) => (
+          <ToastForm
+            closeFn={closeToast}
+            transitionState={state}
+            bgColor={toastColor}
+            content={toastContent}
+          />
+        )}
+      </Transition>
       <h2 className={styles["title"]}>Contacto</h2>
       <div className={styles["contact"]}>
         <form action="POST" ref={formRef} onSubmit={submitHandler}>
