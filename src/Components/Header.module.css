@@ -21,6 +21,11 @@ header {
   width: 4rem;
 }
 
+.burger-btn {
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .header-nav ul {
   list-style: none;
   display: flex;
@@ -83,5 +88,11 @@ header {
 
   .mobile-menu-bars {
     display: block;
+  }
+
+  .burger-btn {
+    display: block;
+    position: relative;
+    z-index: 9999;
   }
 }

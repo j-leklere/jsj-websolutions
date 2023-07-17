@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Header.module.css";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Squash as Hamburger } from "hamburger-react";
 
 function Header(props) {
   return (
@@ -25,11 +24,14 @@ function Header(props) {
       <button className={`${styles["btn-contact"]} btn-style-1`}>
         <a href="#contact">Contacto</a>
       </button>
-      <FontAwesomeIcon
-        icon={faBars}
-        className={styles["mobile-menu-bars"]}
-        onClick={props.onMenuClick}
-      />
+      <div onClick={props.onMenuClick} className={styles["burger-btn"]}>
+        <Hamburger
+          toggled={props.isOpen}
+          color="#fff"
+          hideOutline={true}
+          rounded
+        />
+      </div>
     </header>
   );
 }

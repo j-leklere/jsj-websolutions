@@ -16,21 +16,18 @@ const overlays = document.getElementById("overlays");
 function App() {
   const [mobNavVisible, setMobNavVisible] = useState(false);
 
-  const showMobileNav = () => {
-    setMobNavVisible(true);
+  const toggleNav = () => {
+    setMobNavVisible((prevState) => !prevState);
   };
 
-  const hideMobileNav = () => {
-    setMobNavVisible(false);
-  };
   return (
     <>
       {mobNavVisible &&
         ReactDOM.createPortal(
-          <MobileNav onMenuClose={hideMobileNav} navVisible={mobNavVisible} />,
+          <MobileNav navVisible={mobNavVisible} />,
           overlays
         )}
-      <Header onMenuClick={showMobileNav} />
+      <Header isOpen={mobNavVisible} onMenuClick={toggleNav} />
       <Hero />
       <Services />
       <Projects />

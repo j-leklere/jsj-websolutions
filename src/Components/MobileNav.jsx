@@ -1,6 +1,3 @@
-import { faClose } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import styles from "./MobileNav.module.css";
 import { useRef } from "react";
 
@@ -20,13 +17,6 @@ function MobileNav(props) {
           >
             JSJ
           </a>
-          {
-            <FontAwesomeIcon
-              icon={faClose}
-              onClick={props.onMenuClose}
-              className={styles["menu-close"]}
-            />
-          }
         </div>
         <nav>
           <ul className={styles["mobile-nav"]}>
