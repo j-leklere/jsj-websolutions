@@ -33,7 +33,9 @@ function MobileNav(props) {
               <a href="#servicios">Sobre Nosotros</a>
             </li>
             <li onClick={props.onMenuClose}>
-              <a href="#servicios">Contacto</a>
+              <a href="#servicios" className={styles["mobile-nav-contact"]}>
+                Contacto
+              </a>
             </li>
           </ul>
         </nav>
