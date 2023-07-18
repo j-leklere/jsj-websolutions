@@ -30,6 +30,27 @@ body {
   box-sizing: border-box;
 }
 
+/*
+ *  STYLE 1
+ */
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  background-color: #222;
+}
+
+body::-webkit-scrollbar {
+  width: 1.4rem;
+  background-color: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
 :root {
   --page-padding-large: 0 10%;
   --page-padding-small: 0 5%;

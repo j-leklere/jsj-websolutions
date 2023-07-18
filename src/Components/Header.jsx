@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { Squash as Hamburger } from "hamburger-react";
+// import { Sling as Hamburger } from "hamburger-react";
 
 function Header(props) {
   return (
