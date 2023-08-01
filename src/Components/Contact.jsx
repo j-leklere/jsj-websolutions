@@ -11,7 +11,7 @@ import ToastForm from "../Components/ToastForm";
 function Contact() {
   const formRef = useRef();
   const nodeRef = useRef(null);
-  const [showToast, setShowToast] = useState(true);
+  const [showToast, setShowToast] = useState(false);
   const [toastColor, setToastColor] = useState("");
   const [toastContent, setToastContent] = useState("");
   const closeToast = () => setShowToast(false);
