@@ -20,20 +20,20 @@ function MobileNav(props) {
         </div>
         <nav>
           <ul className={styles["mobile-nav"]}>
-            <li onClick={props.onMenuClose}>
-              <a href="#servicios">Servicios</a>
+            <li onClick={props.onMenuClick}>
+              <a href="#services">Servicios</a>
             </li>
-            <li onClick={props.onMenuClose}>
-              <a href="#servicios">Proyectos</a>
+            <li onClick={props.onMenuClick}>
+              <a href="#projects">Proyectos</a>
             </li>
-            <li onClick={props.onMenuClose}>
-              <a href="#servicios">Nuestros Clientes</a>
+            <li onClick={props.onMenuClick}>
+              <a href="#testimonials">Nuestros Clientes</a>
             </li>
-            <li onClick={props.onMenuClose}>
-              <a href="#servicios">Sobre Nosotros</a>
+            <li onClick={props.onMenuClick}>
+              <a href="#about-us">Sobre Nosotros</a>
             </li>
-            <li onClick={props.onMenuClose}>
-              <a href="#servicios" className={styles["mobile-nav-contact"]}>
+            <li onClick={props.onMenuClick}>
+              <a href="#contact" className={styles["mobile-nav-contact"]}>
                 Contacto
               </a>
             </li>

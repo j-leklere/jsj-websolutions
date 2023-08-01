@@ -24,7 +24,7 @@ function App() {
     <>
       {mobNavVisible &&
         ReactDOM.createPortal(
-          <MobileNav navVisible={mobNavVisible} />,
+          <MobileNav navVisible={mobNavVisible} onMenuClick={toggleNav} />,
           overlays
         )}
       <Header isOpen={mobNavVisible} onMenuClick={toggleNav} />
