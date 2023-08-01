@@ -4,6 +4,10 @@
   padding: 2.8rem;
   border-radius: 5rem;
   transition: all 0.3s;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .testimonial-item h3,
