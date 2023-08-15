@@ -9,39 +9,33 @@ function AboutUs() {
     <section className={styles["about-us-section"]} id="about-us">
       <h2>SOBRE NOSOTROS</h2>
       <p className={styles["about-us-p"]}>
-        ¡Bienvenido a nuestra página web! En JSJ Web Solutions, nos apasiona
-        diseñar y desarrollar sitios web únicos y atractivos que ayuden a
-        nuestros clientes a destacarse en línea. Nuestro equipo de expertos en
-        diseño web está comprometido en ofrecer soluciones personalizadas y de
-        calidad que satisfagan las necesidades de cada proyecto.
+        En JSJ Web Solutions, nos apasiona diseñar y desarrollar sitios web
+        únicos y atractivos que ayuden a nuestros clientes a destacarse. Nuestro
+        equipo está comprometido en ofrecer soluciones personalizadas y de
+        calidad que cumplan con las necesidades de cada proyecto.
       </p>
       <div className={styles["cards-container"]}>
         <AboutUsCard
           icon={faGears}
-          text="Tomamos en cuenta las necesidades y deseos del cliente para un
-        desarrollo personalizado y preciso del producto"
+          text="Nos especializamos en diseñar interfaces personalizadas que reflejen la identidad única de cada cliente."
         />
         <AboutUsCard
           icon={faGears}
-          text="Tomamos en cuenta las necesidades y deseos del cliente para un
-        desarrollo personalizado y preciso del producto"
+          text="Aplicamos la metodología de trabajo ágil Scrum para asegurar una entrega eficiente y de calidad."
         />
         <AboutUsCard
           icon={faGears}
-          text="Tomamos en cuenta las necesidades y deseos del cliente para un
-        desarrollo personalizado y preciso del producto"
+          text="Nuestros valores principales son la honestidad, la disciplina y el compromiso, los cuales nos permiten brindar los mejores resultados posibles."
         />
         <AboutUsCard
           icon={faGears}
-          text="Tomamos en cuenta las necesidades y deseos del cliente para un
-        desarrollo personalizado y preciso del producto "
+          text="Mantenemos una comunicación continua con el cliente durante todo el proceso de desarrollo."
         />
       </div>
       <div className={styles["last-card-container"]}>
         <AboutUsCard
           icon={faGears}
-          text="Tomamos en cuenta las necesidades y deseos del cliente para un
-        desarrollo personalizado y preciso del producto"
+          text="Ponemos al cliente en el centro de nuestro enfoque, escuchando e implementando sus necesidades y deseos."
         />
       </div>
 

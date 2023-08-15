@@ -43,19 +43,28 @@ function Testimonials() {
           onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
-            <TestimonialItem />
+            <TestimonialItem
+              texto="Felicitaciones por la página web creada! Es un medio ágil y actual para favorecer nuestra interacción, el conocimiento acerca de la institución y para convocar a nuevos integrantes."
+              nombre="Graciela Adam"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialItem />
+            <TestimonialItem
+              texto="Me sumo a la alegría y felicitaciones de tener la página web renovada, así como también el acceso abierto a nuestras publicaciones."
+              nombre="Ernesto Pais"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialItem />
+            <TestimonialItem
+              texto="Felicito y celebro este nuevo logro, y valoro mucho que sea de eso acceso abierto: la información y el conocimiento cobran valor solo si son compartidos."
+              nombre="Norma Contini"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialItem />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonialItem />
+            <TestimonialItem
+              texto="Muy amigable y clara la pagina, va a ser sumamente útil"
+              nombre="Delia Sorbero"
+            />
           </SwiperSlide>
         </Swiper>
       </div>

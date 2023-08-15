@@ -181,7 +181,7 @@ function Contact() {
             </a>
             <div>
               <h3>Envianos un Whatsapp</h3>
-              <p>+54 11 1111-2222</p>
+              <p>+54-11-3422-2910</p>
             </div>
           </div>
           <div className={styles["email"]}>

@@ -61,7 +61,9 @@ function Projects() {
             desarrollo web de "Digital House". El sitio web es un e-Commerce el
             cual cuenta con las siguientes características: crear un usuario con
             el que se puede iniciar sesión, y si el mismo tiene un rol de
-            administrador puede crear/editar/borrar productos de la página.
+            administrador puede crear/editar/borrar productos de la página. La
+            página cuenta con una personalidad de tipo "Bold/Confident", e
+            implementa NodeJS y ExpressJS como tecnologías principales.
           </p>
           <div className={styles["project-link"]}>
             <a
