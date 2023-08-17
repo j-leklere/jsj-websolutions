@@ -1,4 +1,10 @@
 import AdeipImg from "../Assets/projects/adeip-img.jpeg";
+import OrsaiImg1 from "../Assets/projects/orsai_1.jpg";
+import OrsaiImg2 from "../Assets/projects/orsai_2.jpg";
+import OrsaiImg3 from "../Assets/projects/orsai_3.jpg";
+import OrsaiImg4 from "../Assets/projects/orsai_4.png";
+import OrsaiImg5 from "../Assets/projects/orsai_5.jpg";
+import OrsaiImg6 from "../Assets/projects/orsai_6.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -81,22 +87,22 @@ function Projects() {
         </div>
         <div className={styles["second-project-imgs-container"]}>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg1} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg2} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg3} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg4} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg5} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={OrsaiImg6} alt="img" />
           </figure>
         </div>
       </div>
