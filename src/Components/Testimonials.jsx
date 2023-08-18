@@ -44,7 +44,7 @@ function Testimonials() {
         >
           <SwiperSlide>
             <TestimonialItem
-              texto="Felicitaciones por la página web creada! Es un medio ágil y actual para favorecer nuestra interacción, el conocimiento acerca de la institución y para convocar a nuevos integrantes."
+              texto="¡Felicitaciones por la página web creada! Es un medio ágil y actual para favorecer nuestra interacción, el conocimiento acerca de la institución y para convocar a nuevos integrantes."
               nombre="Graciela Adam"
             />
           </SwiperSlide>
@@ -62,7 +62,7 @@ function Testimonials() {
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialItem
-              texto="Muy amigable y clara la pagina, va a ser sumamente útil"
+              texto="Muy amigable y clara la pagina, va a ser sumamente útil."
               nombre="Delia Sorbero"
             />
           </SwiperSlide>
