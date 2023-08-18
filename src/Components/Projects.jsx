@@ -1,4 +1,10 @@
-import AdeipImg from "../Assets/projects/adeip-img.jpeg";
+import AdeipImg1 from "../Assets/projects/adeip_1.jpeg";
+import AdeipImg2 from "../Assets/projects/adeip_2.jpeg";
+import AdeipImg3 from "../Assets/projects/adeip_3.jpeg";
+import AdeipImg4 from "../Assets/projects/adeip_4.jpeg";
+import AdeipImg5 from "../Assets/projects/adeip_5.jpeg";
+import AdeipImg6 from "../Assets/projects/adeip_6.jpeg";
+
 import OrsaiImg1 from "../Assets/projects/orsai_1.jpg";
 import OrsaiImg2 from "../Assets/projects/orsai_2.jpg";
 import OrsaiImg3 from "../Assets/projects/orsai_3.jpg";
@@ -39,22 +45,22 @@ function Projects() {
         </div>
         <div className={styles["first-project-imgs-container"]}>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg1} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg2} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg3} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg4} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg5} alt="img" />
           </figure>
           <figure>
-            <img src={AdeipImg} alt="img" />
+            <img src={AdeipImg6} alt="img" />
           </figure>
         </div>
       </div>
