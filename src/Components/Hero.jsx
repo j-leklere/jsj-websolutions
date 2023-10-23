@@ -22,7 +22,7 @@ function Hero() {
         </div>
       </div>
       <button className={`${styles["btn-hero"]} btn-style-1`}>
-        <a href="#contact">Hacé tu sitio web realidad!</a>
+        <a href="#contact">¡Hacé tu sitio web realidad!</a>
       </button>
     </section>
   );
