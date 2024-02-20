@@ -14,17 +14,19 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
       to top left,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.85)
     ),
-    url("./Assets/home-background-bw.jpg");
+    url("./Assets/home-background-bw.jpg"); */
   /* background: linear-gradient(
     176deg,
     rgb(18, 24, 27) 50%,
     rgb(32, 39, 55) 100%
   ); */
+  background: url("./Assets/jsj-bg.jpg"),
+    linear-gradient(176deg, rgb(0, 0, 0) 50%, rgb(16, 20, 28) 100%);
   background-size: cover;
   box-sizing: border-box;
 }
@@ -81,6 +83,15 @@ body::-webkit-scrollbar-thumb {
 :root {
   --page-padding-large: 0 10%;
   --page-padding-small: 0 5%;
+  /* --main-color: #ff6b6b;
+  --main-color: #0598ce; */
+  --main-color: #63e6be;
+  /* --main-gradient: linear-gradient(
+    var(--a),
+    rgba(255, 63, 105, 0.7),
+    rgba(255, 148, 77, 0.7)
+  ); */
+  --main-gradient: linear-gradient(to right bottom, var(--main-color), #73f0cb);
 }
 
 @keyframes sliderShape {
@@ -118,9 +129,13 @@ button a {
 .btn-style-1 {
   --a: 45deg;
   border: none;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   color: #fff;
-  background: linear-gradient(var(--a), rgb(255, 63, 105), rgb(255, 133, 111));
+  /* background: linear-gradient(var(--a), rgb(255, 63, 105), rgb(255, 133, 111));
+  background: linear-gradient(var(--a), #113768, var(--main-color));
+  background: var(--main-gradient); */
+  background: none;
+  border: 2px solid white;
   transition: --a 0.3s ease-out, all 0.3s ease-out;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }

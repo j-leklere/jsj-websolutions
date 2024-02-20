@@ -6,12 +6,7 @@
 
 .scroll-up-btn {
   font-size: 4rem;
-  background-color: rgba(255, 107, 107, 0.5);
-  background: linear-gradient(
-    var(--a),
-    rgba(255, 63, 105, 0.7),
-    rgba(255, 148, 77, 0.7)
-  );
+  background: var(--main-gradient);
   backdrop-filter: blur(5px);
   color: white;
   border-radius: 50%;

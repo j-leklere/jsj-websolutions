@@ -4,7 +4,7 @@
 
 .title {
   text-transform: uppercase;
-  color: #ff6b6b;
+  color: var(--main-color);
   font-size: 3.6rem;
   margin: auto;
   text-align: center;
@@ -126,7 +126,7 @@ form button {
 
 .email a svg:hover,
 .whatsapp a svg:hover {
-  color: #ff6b6b;
+  color: var(--main-color);
 }
 
 /*//////////////////*/

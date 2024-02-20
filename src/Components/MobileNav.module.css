@@ -1,7 +1,7 @@
 .background {
   height: 14rem;
   width: 14rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: fixed;
   top: -2rem;
   right: -2rem;
@@ -40,7 +40,7 @@
 }
 
 .nav-title {
-  color: #ff6b6b;
+  color: var(--main-color);
   text-decoration: none;
   font-size: 5rem;
   font-weight: 800;
@@ -91,7 +91,7 @@
 }
 
 .mobile-nav-contact {
-  background-color: #ff6b6b;
+  background-color: var(--main-color);
   border-radius: 1000px;
 
   padding: 0.5rem 6rem;

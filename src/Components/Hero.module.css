@@ -27,7 +27,10 @@
 }
 
 .hero-box h2 span {
-  color: #2bdcf2;
+  /* color: #2bdcf2; */
+  -webkit-text-fill-color: transparent;
+  background: var(--main-gradient);
+  background-clip: text;
 }
 
 .hero-box .brand-logo-name-mobile {
@@ -46,6 +49,10 @@
   font-size: 10rem;
   font-family: "Raleway", sans-serif;
   color: #ff6b6b;
+  color: var(--main-color);
+  -webkit-text-fill-color: transparent;
+  background: var(--main-gradient);
+  background-clip: text;
 }
 
 .brand-logo-name span {
@@ -70,12 +77,13 @@
 
 .btn-hero::after {
   content: "";
-  background-color: #ff6b6b;
+  /* background-color: #ff6b6b;
+  background-color: var(--main-color); */
   color: #444;
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -84,7 +92,7 @@
 }
 
 .btn-hero:hover {
-  background: linear-gradient(var(--a), rgb(255, 63, 105), rgb(255, 196, 69));
+  background: var(--main-gradient);
   transition: --a 0.3s ease-out, all 0.3s ease-out;
   animation: rotate-bg-color 2s ease-in-out infinite;
   --a: 235deg;

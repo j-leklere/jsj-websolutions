@@ -7,7 +7,7 @@
 .about-us-section h2 {
   font-size: 3.6rem;
   text-align: center;
-  color: #ff6b6b;
+  color: var(--main-color);
   margin-bottom: 6rem;
   padding-top: 5rem;
 }

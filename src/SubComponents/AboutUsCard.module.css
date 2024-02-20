@@ -4,13 +4,14 @@
 
   display: flex;
   align-items: center;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
   overflow: hidden;
 }
 
 .about-us-card-icon-container {
-  background: linear-gradient(0deg, #3bc9db, rgba(255, 106, 79, 1));
-  background: linear-gradient(rgba(0, 225, 255, 0.7), rgba(65, 151, 255, 0.7));
+  /* background: linear-gradient(0deg, #3bc9db, rgba(255, 106, 79, 1));
+  background: linear-gradient(rgba(0, 225, 255, 0.7), rgba(65, 151, 255, 0.7)); */
+  background: var(--main-gradient);
   align-self: stretch;
   display: flex;
   align-items: center;

@@ -10,7 +10,7 @@ header {
 
 .brand-name {
   font-family: "Raleway", sans-serif;
-  color: #ff6b6b;
+  color: var(--main-color);
   font-size: 4rem;
   margin-right: 4rem;
 }
@@ -52,7 +52,7 @@ header {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #ff6b6b;
+  background-color: var(--main-color);
   transition: all 0.2s ease-out;
 }
 

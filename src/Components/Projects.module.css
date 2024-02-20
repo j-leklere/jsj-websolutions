@@ -7,7 +7,7 @@
 .projects-section h2 {
   font-size: 3.6rem;
   text-align: center;
-  color: #ff6b6b;
+  color: var(--main-color);
   margin-bottom: 6rem;
   padding-top: 5rem;
 }
@@ -33,7 +33,7 @@
 
 .first-project h3 {
   font-size: 3.4rem;
-  color: #2bdcf2;
+  color: var(--main-color);
   margin-bottom: 4rem;
 }
 
@@ -86,7 +86,7 @@
 
 .second-project h3 {
   font-size: 3.4rem;
-  color: #2bdcf2;
+  color: var(--main-color);
   margin-bottom: 4rem;
 }
 
@@ -127,21 +127,21 @@
 .project-link a {
   font-size: 2.2rem;
   text-decoration: none;
-  color: #2bdcf2;
+  color: var(--main-color);
   transition: all 0.5s;
 }
 
 .project-link a:hover {
-  color: #1e9aa9;
+  color: #86ffdb;
 }
 
 .project-link-icon {
-  color: #2bdcf2;
+  color: var(--main-color);
   transition: all 0.5s;
 }
 
 .project-link a:hover .project-link-icon {
-  color: #1e9aa9;
+  color: #86ffdb;
 }
 
 /*////////////////////*/
@@ -176,10 +176,6 @@
 }
 
 @media (max-width: 1280px) {
-  .first-project {
-    /* height: 80vh; */
-  }
-
   .first-project-imgs-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
