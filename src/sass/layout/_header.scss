@@ -4,13 +4,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--page-padding-large);
+  padding: $page-padding-large;
   padding-top: 2rem;
 }
 
 .brand-name {
   font-family: "Raleway", sans-serif;
-  color: var(--main-color);
+  color: $main-color;
   font-size: 4rem;
   margin-right: 4rem;
 }
@@ -26,38 +26,40 @@ header {
   -webkit-tap-highlight-color: transparent;
 }
 
-.header-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 300;
-}
+.header-nav {
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 
-.header-nav a {
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
+  & a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 
-.header-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  display: block;
-  height: 3px;
-  width: 0%;
-  background-color: var(--main-color);
-  transition: all 0.2s ease-out;
-}
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      display: block;
+      height: 3px;
+      width: 0%;
+      background-color: $main-color;
+      transition: all 0.2s ease-out;
+    }
 
-.header-nav a:hover::after {
-  width: 100%;
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 .btn-contact {
@@ -67,7 +69,7 @@ header {
 
 @media (max-width: 1024px) {
   header {
-    padding: var(--page-padding-small);
+    padding: $page-padding-small;
     padding-top: 2rem;
   }
 

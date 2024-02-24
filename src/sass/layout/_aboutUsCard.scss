@@ -1,42 +1,38 @@
-.about-us-card-container {
-  width: 56rem;
-  /* height: 23rem; */
+.about-us-card {
+  &-container {
+    width: 56rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
 
-  display: flex;
-  align-items: center;
-  /* border-radius: 1.5rem; */
-  overflow: hidden;
-}
+  &-icon {
+    &-container {
+      background: $main-gradient;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
 
-.about-us-card-icon-container {
-  /* background: linear-gradient(0deg, #3bc9db, rgba(255, 106, 79, 1));
-  background: linear-gradient(rgba(0, 225, 255, 0.7), rgba(65, 151, 255, 0.7)); */
-  background: var(--main-gradient);
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-}
+    width: 10rem;
+    height: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-.about-us-card-icon {
-  width: 10rem;
-  height: 7rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+  &-p {
+    &-container {
+      align-self: stretch;
+      background-color: #303030;
 
-.about-us-card-p-container {
-  align-self: stretch;
-  background-color: #303030;
+      display: flex;
+      align-items: center;
+    }
 
-  display: flex;
-  align-items: center;
-}
-
-.about-us-card-p {
-  font-size: 1.8rem;
-  text-align: start;
-
-  padding: 3.5rem 2rem 3.5rem 2rem;
+    font-size: 1.8rem;
+    text-align: start;
+    padding: 3.5rem 2rem 3.5rem 2rem;
+  }
 }
 
 /*////////////////////*/

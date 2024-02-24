@@ -6,17 +6,17 @@
 
 .scroll-up-btn {
   font-size: 4rem;
-  background: var(--main-gradient);
+  background: $main-gradient;
   backdrop-filter: blur(5px);
   color: white;
   border-radius: 50%;
   transition: all 0.3s;
 
   padding: 1.5rem;
-}
 
-.scroll-up-btn:hover {
-  transform: translateY(-3px);
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 
 /*////////////////////*/

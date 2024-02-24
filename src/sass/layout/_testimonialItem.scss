@@ -20,7 +20,7 @@ svg {
 .testimonial-item svg {
   height: 6rem;
   margin-bottom: 4rem;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .testimonial-item p {
@@ -30,7 +30,7 @@ svg {
 
 .testimonial-item h3 {
   font-size: 1.8rem;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .testimonial-item h4 {

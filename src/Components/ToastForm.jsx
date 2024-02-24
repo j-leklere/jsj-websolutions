@@ -1,18 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./ToastForm.module.css";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 function ToastForm(props) {
   return (
     <div
       className={[
-        styles["toast"],
+        "toast",
         props.transitionState === "entering"
-          ? styles["toast-show"]
+          ? "toast-show"
           : props.transitionState === "entered"
-          ? styles["toast-showing"]
+          ? "toast-showing"
           : props.transitionState === "exiting"
-          ? styles["toast-closing"]
+          ? "toast-closing"
           : null,
       ].join(" ")}
       style={{ backgroundColor: props.bgColor }}
@@ -20,10 +19,10 @@ function ToastForm(props) {
       <p>Formulario enviado!</p>
       <FontAwesomeIcon
         icon={faClose}
-        className={styles["toast-close"]}
+        className="toast-close"
         onClick={props.closeFn}
       />
-      <div className={styles["progress-bar"]}></div>
+      <div className="progress-bar"></div>
     </div>
   );
 }

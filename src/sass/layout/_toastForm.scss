@@ -25,19 +25,19 @@
   transition: all 0.2s ease-in;
   transform: translateY(-150%);
   opacity: 0;
-}
 
-.toast p {
-  margin-left: 2rem;
+  & p {
+    margin-left: 2rem;
+  }
 }
 
 .toast-close {
   font-size: 2.4rem;
   margin-right: 2rem;
-}
 
-.toast-close:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .progress-bar {
@@ -46,17 +46,17 @@
   left: 0;
   height: 6px;
   width: 100%;
-}
 
-.progress-bar:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 100%;
-  height: 100%;
-  width: 100%;
-  background-color: #2bdcf2;
-  z-index: 3;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #2bdcf2;
+    z-index: 3;
+  }
 }
 
 /* Transition */
@@ -77,15 +77,6 @@
 .toast-closing {
   opacity: 0;
   transform: translateY(-50%);
-}
-
-@keyframes progress {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: 100%;
-  }
 }
 
 @media (max-width: 768px) {

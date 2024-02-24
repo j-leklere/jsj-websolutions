@@ -4,7 +4,7 @@
 
 .title {
   text-transform: uppercase;
-  color: var(--main-color);
+  color: $main-color;
   font-size: 3.6rem;
   margin: auto;
   text-align: center;
@@ -47,10 +47,10 @@ input {
   color: #fff;
   background-color: #1a1a1a;
   font-size: 1.8rem;
-}
 
-input:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 textarea {
@@ -60,10 +60,10 @@ textarea {
   border: none;
   color: #fff;
   background-color: #1a1a1a;
-}
 
-textarea:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 form button {
@@ -77,21 +77,21 @@ form button {
 .other-contact {
   padding-left: 6rem;
   width: 60%;
-}
 
-.other-contact button {
-  font-size: 5rem;
-}
+  & button {
+    font-size: 5rem;
+  }
 
-.other-contact h3 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-}
+  & h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 
-.other-contact p {
-  font-size: 1.8rem;
-  font-weight: 300;
+  & p {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
 }
 
 .whatsapp,
@@ -126,31 +126,12 @@ form button {
 
 .email a svg:hover,
 .whatsapp a svg:hover {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 /*//////////////////*/
 /*/ //Validations//*/
 /*//////////////////*/
-@keyframes shake {
-  0% {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-  25% {
-    margin-left: 0.3rem;
-    margin-right: -0.3rem;
-  }
-  75% {
-    margin-left: -0.3rem;
-    margin-right: 0.3rem;
-  }
-  100% {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-}
-
 .invalid-input {
   animation: shake 0.2s ease-in-out 2;
   box-shadow: 0 0 0.4rem #ff6f6f;

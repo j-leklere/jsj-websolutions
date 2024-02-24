@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./Contact.module.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import useInputValidation from "../Hooks/useInputValidation";
@@ -97,19 +96,15 @@ function Contact() {
   };
 
   // Conditional classes for inputs and labels
-  const fullnameClassInput = fullnameHasError
-    ? `${styles["invalid-input"]}`
-    : "";
-  const emailClassInput = emailHasError ? `${styles["invalid-input"]}` : "";
-  const messageClassInput = messageHasError ? `${styles["invalid-input"]}` : "";
-  const fullnameClassLabel = fullnameHasError
-    ? `${styles["invalid-label"]}`
-    : "";
-  const emailClassLabel = emailHasError ? `${styles["invalid-label"]}` : "";
-  const messageClassLabel = messageHasError ? `${styles["invalid-label"]}` : "";
+  const fullnameClassInput = fullnameHasError ? "invalid-input" : "";
+  const emailClassInput = emailHasError ? "invalid-input" : "";
+  const messageClassInput = messageHasError ? "invalid-input" : "";
+  const fullnameClassLabel = fullnameHasError ? "invalid-label" : "";
+  const emailClassLabel = emailHasError ? "invalid-label" : "";
+  const messageClassLabel = messageHasError ? "invalid-label" : "";
 
   return (
-    <section className={styles["section-contact"]} id="contact">
+    <section className="section-contact" id="contact">
       <Transition in={showToast} timeout={200} nodeRef={nodeRef}>
         {(state) => (
           <ToastForm
@@ -120,8 +115,8 @@ function Contact() {
           />
         )}
       </Transition>
-      <h2 className={styles["title"]}>Contacto</h2>
-      <div className={styles["contact"]}>
+      <h2 className="title">Contacto</h2>
+      <div className="contact">
         <form action="POST" ref={formRef} onSubmit={submitHandler}>
           <label htmlFor="fullname" className={fullnameClassLabel}>
             Nombre Completo
@@ -135,7 +130,7 @@ function Contact() {
               className={fullnameClassInput}
             />
             {fullnameHasError && (
-              <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
+              <p className="p-invalid">Este campo es obligatorio.</p>
             )}
           </label>
           <label htmlFor="email" className={emailClassLabel}>
@@ -150,9 +145,7 @@ function Contact() {
               className={emailClassInput}
             />
             {emailHasError && (
-              <p className={styles["p-invalid"]}>
-                Este campo debe ser un e-mail válido.
-              </p>
+              <p className="p-invalid">Este campo debe ser un e-mail válido.</p>
             )}
           </label>
           <label htmlFor="message" className={messageClassLabel}>
@@ -167,15 +160,15 @@ function Contact() {
               className={messageClassInput}
             />
             {messageHasError && (
-              <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
+              <p className="p-invalid">Este campo es obligatorio.</p>
             )}
           </label>
           <button className="btn-style-1" disabled={!formIsValid}>
             Enviar
           </button>
         </form>
-        <div className={styles["other-contact"]}>
-          <div className={styles["whatsapp"]}>
+        <div className="other-contact">
+          <div className="whatsapp">
             <a href="/">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
@@ -184,7 +177,7 @@ function Contact() {
               <p>+54-11-3422-2910</p>
             </div>
           </div>
-          <div className={styles["email"]}>
+          <div className="email">
             <a href="/">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>

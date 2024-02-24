@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./Services.module.css";
+// import styles from "./Services.module.css";
 import { faGears, faRocket, faTools } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 
@@ -34,10 +34,10 @@ function Services() {
   }, [isIntersecting]);
 
   return (
-    <section className={styles.services} id="services">
+    <section className="services" id="services">
       <h2>SERVICIOS</h2>
-      <div className={styles["services-items"]} ref={ref}>
-        <div className={styles["service-item"]} ref={refServiceItem}>
+      <div className="services-items" ref={ref}>
+        <div className="service-item" ref={refServiceItem}>
           <FontAwesomeIcon icon={faRocket} />
           <h3>
             <span>CREACIÓN</span>
@@ -51,7 +51,7 @@ function Services() {
             del cliente.
           </p>
         </div>
-        <div className={styles["service-item"]} ref={refServiceItem}>
+        <div className="service-item" ref={refServiceItem}>
           <FontAwesomeIcon icon={faGears} />
           <h3>
             <span>SOLUCIÓN</span>
@@ -66,7 +66,7 @@ function Services() {
             para estos.
           </p>
         </div>
-        <div className={styles["service-item"]} ref={refServiceItem}>
+        <div className="service-item" ref={refServiceItem}>
           <FontAwesomeIcon icon={faTools} />
           <h3>
             <span>MANTENIMIENTO</span>

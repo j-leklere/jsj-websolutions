@@ -1,4 +1,3 @@
-import styles from "./MobileNav.module.css";
 import { useRef } from "react";
 
 function MobileNav(props) {
@@ -7,19 +6,15 @@ function MobileNav(props) {
 
   return (
     <>
-      <div ref={nodeRef} className={styles.background}></div>
-      <div className={styles.container}>
-        <div className={styles["layout-top"]}>
-          <a
-            href="#contacto"
-            className={styles["nav-title"]}
-            onClick={props.onMenuClose}
-          >
+      <div ref={nodeRef} className="background"></div>
+      <div className="container">
+        <div className="layout-top">
+          <a href="#contacto" className="nav-title" onClick={props.onMenuClose}>
             JSJ
           </a>
         </div>
         <nav>
-          <ul className={styles["mobile-nav"]}>
+          <ul className="mobile-nav">
             <li onClick={props.onMenuClick}>
               <a href="#services">Servicios</a>
             </li>
@@ -33,7 +28,7 @@ function MobileNav(props) {
               <a href="#about-us">Sobre Nosotros</a>
             </li>
             <li onClick={props.onMenuClick}>
-              <a href="#contact" className={styles["mobile-nav-contact"]}>
+              <a href="#contact" className="mobile-nav-contact">
                 Contacto
               </a>
             </li>

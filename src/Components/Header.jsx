@@ -1,12 +1,11 @@
-import styles from "./Header.module.css";
 import { Squash as Hamburger } from "hamburger-react";
 // import { Sling as Hamburger } from "hamburger-react";
 
 function Header(props) {
   return (
     <header id="header">
-      <h1 className={styles["brand-name"]}>JSJ</h1>
-      <nav className={styles["header-nav"]}>
+      <h1 className="brand-name">JSJ</h1>
+      <nav className="header-nav">
         <ul>
           <li>
             <a href="#services">Servicios</a>
@@ -22,10 +21,10 @@ function Header(props) {
           </li>
         </ul>
       </nav>
-      <button className={`${styles["btn-contact"]} btn-style-1`}>
+      <button className="btn-contact btn-style-1">
         <a href="#contact">Contacto</a>
       </button>
-      <div onClick={props.onMenuClick} className={styles["burger-btn"]}>
+      <div onClick={props.onMenuClick} className="burger-btn">
         <Hamburger
           toggled={props.isOpen}
           color="#fff"
