@@ -169,7 +169,11 @@ function Contact() {
         </form>
         <div className="other-contact">
           <div className="whatsapp">
-            <a href="/">
+            <a
+              href="https://api.whatsapp.com/send?phone=541134222910"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
             <div>
@@ -178,7 +182,7 @@ function Contact() {
             </div>
           </div>
           <div className="email">
-            <a href="/">
+            <a href="mailto:jsjsolutions@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
             <div>
