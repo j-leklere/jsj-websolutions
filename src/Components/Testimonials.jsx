@@ -45,25 +45,29 @@ function Testimonials() {
           <SwiperSlide>
             <TestimonialItem
               texto="¡Felicitaciones por la página web creada! Es un medio ágil y actual para favorecer nuestra interacción, el conocimiento acerca de la institución y para convocar a nuevos integrantes."
+              cliente="ADEIP"
               nombre="Graciela Adam"
             />
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialItem
               texto="Me sumo a la alegría y felicitaciones de tener la página web renovada, así como también el acceso abierto a nuestras publicaciones."
+              cliente="ADEIP"
               nombre="Ernesto Pais"
             />
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialItem
               texto="Felicito y celebro este nuevo logro, y valoro mucho que sea de eso acceso abierto: la información y el conocimiento cobran valor solo si son compartidos."
+              cliente="ADEIP"
               nombre="Norma Contini"
             />
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialItem
-              texto="Muy amigable y clara la pagina, va a ser sumamente útil."
-              nombre="Delia Sorbero"
+              texto="El servicio ha sido muy bueno, especialmente el seguimiento y la personalización del producto. Siempre se mantuvo el contacto y la buena atención por parte de los chicos. Luego, la entrega es exactamente lo mismo que se había acordado y seguía todos los pedidos que se habían hecho durante el diseño. Muy satisfecho."
+              cliente="Trento"
+              nombre="Francisco Marascalchi"
             />
           </SwiperSlide>
         </Swiper>

@@ -1,7 +1,8 @@
 .projects-section {
   width: 70%;
+  height: 100vh;
   text-align: center;
-  margin: 0 auto 20rem auto;
+  margin: auto;
 }
 
 .projects-section h2 {
@@ -142,6 +143,109 @@
 
 .project-link a:hover .project-link-icon {
   color: #1e9aa9;
+}
+
+/*///////////////////////*/
+/*/////// Redisign //////*/
+/*///////////////////////*/
+
+.projects-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  margin: auto;
+}
+
+.project-card {
+  width: 30rem;
+  height: auto;
+  background-color: #222;
+}
+
+.project-url a {
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 1.6rem;
+}
+
+.project-url a p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.project-url a svg {
+  height: 2rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 2.4rem 1.8rem;
+}
+
+.project-image img {
+  height: 17.5rem;
+}
+
+.project-description {
+  text-align: left;
+  font-weight: 200;
+  margin: auto;
+  font-size: 1.6rem;
+  margin: 2.4rem 0;
+}
+
+.project-card div img {
+  width: 100%;
+}
+
+.project-colors-techs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-techs {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-colors {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.project-color {
+  width: 2.4rem;
+  height: 2rem;
+}
+
+.project-icon {
+  height: 2.6rem;
+}
+
+.project-color-green {
+  background-color: #48e8df;
+}
+.project-color-white {
+  background-color: #ffffff;
+}
+.project-color-red {
+  background-color: #b42b51;
+}
+.project-color-yellow {
+  background-color: #e9b824;
 }
 
 /*////////////////////*/
