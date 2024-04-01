@@ -2,12 +2,7 @@
   width: 70%;
   height: 100vh;
   text-align: center;
-<<<<<<< HEAD:src/Components/Projects.module.css
   margin: auto;
-}
-=======
-  margin: 0 auto 20rem auto;
->>>>>>> f2697a9b821336df20ed7367b2aa75ab14824014:src/sass/layout/_projects.scss
 
   & h2 {
     font-size: 3.6rem;
@@ -176,14 +171,21 @@
   text-decoration: none;
 
   font-size: 1.6rem;
+
+  &:hover p,
+  &:hover svg {
+    color: $main-color;
+  }
 }
 
 .project-url a p {
+  transition: all 0.3s;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
 .project-url a svg {
+  transition: all 0.3s;
   height: 2rem;
 }
 
@@ -378,22 +380,11 @@
   }
 }
 
-@media (max-width: 600px) {
-  .first-project-imgs-container {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 650px) {
+  .projects-section {
+    height: auto;
   }
-
-  .second-project-imgs-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .first-project-imgs-container {
-    width: 100%;
-  }
-
-  .second-project-imgs-container {
-    width: 100%;
+  .projects-container {
+    flex-direction: column;
   }
 }
