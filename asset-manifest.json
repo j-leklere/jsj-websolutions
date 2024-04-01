@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.795c4294.css",
-    "main.js": "/static/js/main.ea2ce2ae.js",
+    "main.css": "/static/css/main.a704c925.css",
+    "main.js": "/static/js/main.cd8dcd56.js",
     "static/media/jsj-bg.jpg": "/static/media/jsj-bg.b4b197b2e10c4296077d.jpg",
-    "static/media/adeip_4.jpeg": "/static/media/adeip_4.ee3fc8905e016a4cf152.jpeg",
-    "static/media/adeip_5.jpeg": "/static/media/adeip_5.a67a10bf5bfaffb8b28f.jpeg",
-    "static/media/adeip_2.jpeg": "/static/media/adeip_2.380e12c0beaf59463294.jpeg",
-    "static/media/adeip_3.jpeg": "/static/media/adeip_3.2f157b7eb333e22660f5.jpeg",
-    "static/media/adeip_6.jpeg": "/static/media/adeip_6.584bbc259ed55e95118b.jpeg",
-    "static/media/adeip_1.jpeg": "/static/media/adeip_1.f29dfee07a6aeaf76d48.jpeg",
-    "static/media/orsai_4.png": "/static/media/orsai_4.0acc4d375c036d0bebc8.png",
-    "static/media/orsai_1.jpg": "/static/media/orsai_1.b4c931a766511f2c59fd.jpg",
-    "static/media/orsai_3.jpg": "/static/media/orsai_3.74fa8259297b0d6d4768.jpg",
-    "static/media/orsai_6.jpg": "/static/media/orsai_6.8da5054814154de64214.jpg",
-    "static/media/orsai_5.jpg": "/static/media/orsai_5.88bb539c5b0f12378feb.jpg",
-    "static/media/orsai_2.jpg": "/static/media/orsai_2.89beeb67bb4f772eb690.jpg",
+    "static/media/adeip_1.jpg": "/static/media/adeip_1.03df50ee45816b86dfc6.jpg",
+    "static/media/trento_1.jpg": "/static/media/trento_1.db0df058c875a3b0c9e9.jpg",
     "index.html": "/index.html",
-    "main.795c4294.css.map": "/static/css/main.795c4294.css.map",
-    "main.ea2ce2ae.js.map": "/static/js/main.ea2ce2ae.js.map"
+    "main.a704c925.css.map": "/static/css/main.a704c925.css.map",
+    "main.cd8dcd56.js.map": "/static/js/main.cd8dcd56.js.map"
   },
   "entrypoints": [
-    "static/css/main.795c4294.css",
-    "static/js/main.ea2ce2ae.js"
+    "static/css/main.a704c925.css",
+    "static/js/main.cd8dcd56.js"
   ]
 }
