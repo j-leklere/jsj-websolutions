@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "./ScrollUpBtn.module.css";
-
 function ScrollUpBtn() {
   const [btnUp, setBtnUp] = useState(false);
 
@@ -31,11 +29,8 @@ function ScrollUpBtn() {
   return (
     <>
       {btnUp && (
-        <a href="#root" className={styles["scroll-up-btn-container"]}>
-          <FontAwesomeIcon
-            icon={faChevronUp}
-            className={styles["scroll-up-btn"]}
-          />
+        <a href="#root" className="scroll-up-btn-container">
+          <FontAwesomeIcon icon={faChevronUp} className="scroll-up-btn" />
         </a>
       )}
     </>

@@ -42,7 +42,7 @@ function Projects() {
   };
 
   return (
-    <section className={styles["projects-section"]} id="projects">
+    <section className="projects-section" id="projects">
       <h2>PROYECTOS</h2>
       <div className={styles["projects-container"]}>
         <div className={styles["project-card"]}>
@@ -126,7 +126,7 @@ function Projects() {
             basándonos en las peticiones del cliente, y utilizando como
             principal tecnología ReactJS.
           </p>
-          <div className={styles["project-link"]}>
+          <div className="project-link">
             <a href="https://adeip.org.ar/" target="_blank" rel="noreferrer">
               Accedé a la página de ADEIP{" "}
               <FontAwesomeIcon
@@ -170,7 +170,7 @@ function Projects() {
             página cuenta con una personalidad de tipo "Bold/Confident", e
             implementa NodeJS y ExpressJS como tecnologías principales.
           </p>
-          <div className={styles["project-link"]}>
+          <div className="project-link">
             <a
               href="https://orsai.onrender.com/"
               target="_blank"
@@ -179,12 +179,12 @@ function Projects() {
               Accedé a la página de ORSAI{" "}
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
-                className={styles["project-link-icon"]}
+                className="project-link-icon"
               />
             </a>
           </div>
         </div>
-        <div className={styles["second-project-imgs-container"]}>
+        <div className="second-project-imgs-container">
           <figure>
             <img src={OrsaiImg1} alt="img" />
           </figure>

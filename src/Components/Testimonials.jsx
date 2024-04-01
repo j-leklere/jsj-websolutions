@@ -1,5 +1,3 @@
-import styles from "./Testimonials.module.css";
-
 // Swiper
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,11 +10,11 @@ import TestimonialItem from "./TestimonialItem";
 
 function Testimonials() {
   return (
-    <section id="testimonials" className={styles.testimonials}>
-      <h2 className={styles["title"]}>Comentarios de nuestros clientes</h2>
-      <div className={styles["testimonial-items"]}>
+    <section id="testimonials" className="testimonials">
+      <h2 className="title">Comentarios de nuestros clientes</h2>
+      <div className="testimonial-items">
         <Swiper
-          className={styles["swiper"]}
+          className="swiper"
           breakpoints={{
             0: {
               slidesPerView: 1,

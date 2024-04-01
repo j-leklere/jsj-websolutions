@@ -1,26 +1,22 @@
-import styles from "./Footer.module.css";
-
 function Footer() {
   return (
     <footer>
-      <div className={styles["footer-container"]}>
-        <div className={styles["first-column"]}>
+      <div className="footer-container">
+        <div className="first-column">
           <h1>JSJ</h1>
           <h2>Web Solutions</h2>
         </div>
-        <div className={styles["sections-column"]}>
+        <div className="sections-column">
           <a href="#header">Inicio</a>
           <a href="#testimonials">Testimonios</a>
           <a href="#projects">Proyectos </a>
         </div>
-        <div className={styles["sections-column"]}>
+        <div className="sections-column">
           <a href="#services">Servicios</a>
           <a href="#about-us">Sobre Nosotros</a>
           <a href="#contact">Contacto</a>
         </div>
-        <p className={styles["copyright"]}>
-          Copyright © 2023 | JSJ Web Solutions
-        </p>
+        <p className="copyright">Copyright © 2023 | JSJ Web Solutions</p>
       </div>
     </footer>
   );
