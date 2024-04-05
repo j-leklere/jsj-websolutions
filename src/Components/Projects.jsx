@@ -23,7 +23,7 @@ function Projects() {
     image: AdeipImg,
     linkBtn: faUpRightFromSquare,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "ADEIP es una Asociación de Estudio e Investigación en Psicodiagnóstico, esta web fue realizada en 2023 utilizando React como tecnología principal. Actualmente manejamos el mantenimiento de la página.",
     reactIcon: faReact,
   };
 
@@ -32,7 +32,7 @@ function Projects() {
     image: TrentoImg,
     linkBtn: faUpRightFromSquare,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Trento Insumos Médicos es una empresa dedicada a la distribución de productos médicos, realizamos su web en 2023 utilizando React y Sass como tecnologías principales. Actualmente manejamos el mantenimiento de la página.",
     sassIcon: faSass,
     reactIcon: faReact,
   };
