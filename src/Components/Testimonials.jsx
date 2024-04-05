@@ -63,7 +63,7 @@ function Testimonials() {
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialItem
-              texto="El servicio ha sido excelente, especialmente el seguimiento y personalización del producto. Siempre se mantuvo el contacto y la buena atención por parte de los chicos. La entrega es exactamente lo que se había acordado y seguía todos los pedidos que se habían hecho durante el diseño. Muy satisfecho."
+              texto="El servicio ha sido excelente, especialmente el seguimiento y personalización del producto. Siempre se mantuvo el contacto y la buena atención por parte de los chicos. La entrega es exactamente lo que se había acordado durante el diseño. Muy satisfecho."
               cliente="Trento"
               nombre="Francisco Marascalchi"
             />
