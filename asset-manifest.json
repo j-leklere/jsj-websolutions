@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e1787d3.css",
+    "main.css": "/static/css/main.795b27fc.css",
     "main.js": "/static/js/main.626f05ea.js",
-    "static/media/jsj-bg.jpg": "/static/media/jsj-bg.b4b197b2e10c4296077d.jpg",
     "static/media/adeip_1.jpg": "/static/media/adeip_1.03df50ee45816b86dfc6.jpg",
     "static/media/trento_1.jpg": "/static/media/trento_1.db0df058c875a3b0c9e9.jpg",
+    "static/media/jsj-bg.jpg": "/static/media/jsj-bg.b6caeef50f8cf4602d73.jpg",
     "index.html": "/index.html",
-    "main.8e1787d3.css.map": "/static/css/main.8e1787d3.css.map",
+    "main.795b27fc.css.map": "/static/css/main.795b27fc.css.map",
     "main.626f05ea.js.map": "/static/js/main.626f05ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e1787d3.css",
+    "static/css/main.795b27fc.css",
     "static/js/main.626f05ea.js"
   ]
 }
