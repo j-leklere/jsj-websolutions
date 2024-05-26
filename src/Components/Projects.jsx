@@ -67,7 +67,11 @@ function Projects() {
         </div>
         <div className="project-card">
           <div className="project-url">
-            <a href={trentoInfo.url} target="_blank" rel="noreferrer">
+            <a
+              href="https://trentoinsumos.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>{trentoInfo.url}</p>
               <FontAwesomeIcon icon={trentoInfo.linkBtn} />
             </a>
